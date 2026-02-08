@@ -16,3 +16,5 @@
 * The second tile set is of the stairways maintained by the Seattle Department of Transportation. The data is from SDOT on the Seattle Geodata site.
 * The third tileset is the composite tileset of the modified tileset with the stairway tile set with transparency set to 100. The yellow was specifically chosen to stand out against the dark basemap.
 * The fourth tile set maps the FEMA flood prone areas of Seattle set against the original monotone mapstyle. This layer is used by the City as an aid to evaluate construction sites for the presence of flood prone areas pertinent to Environmentally Critical Areas (ECA) regulations. The data is from City of Seattle ArcGIS Online.
+
+This assignment used no AI assistance.
