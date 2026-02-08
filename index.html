@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Display a map on a webpage</title>
+<title>Seattle: 4 Map Tiles</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
@@ -16,17 +16,12 @@ body { margin: 0; padding: 0; }
   position:absolute;
   top:10px;
   left:10px;
-
   background:#ffffff;
   padding:10px;
-
   border-radius:6px;
-
   font-family:sans-serif;
   font-size:13px;
-
   box-shadow:0 1px 4px #838383;
-
   z-index:2;
 }
 .panel_title{
@@ -39,28 +34,22 @@ body { margin: 0; padding: 0; }
   margin:4px 0;
   cursor:pointer;
 }
+
 .map_btn {
   width: 32px;
   height: 32px;
-
   background: #ffffff;
   color: #1e293b;
-
   border: 1px solid #e2e8f0;
   border-radius: 6px;
-
   font-size: 18px;
   font-weight: 600;
   line-height: 1;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
-
   box-shadow: 0 1px 2px #838383;
-
   transition: background 0.15s ease,
               box-shadow 0.15s ease,
               transform 0.1s ease;
@@ -82,20 +71,16 @@ body { margin: 0; padding: 0; }
   position: absolute;
   top: 180px;
   left: 10px;
-
   display: flex;
   flex-direction: column;
   gap: 6px;
-
   background: rgba(255, 255, 255, 0.95);
   padding: 6px;
-
   border-radius: 8px;
-
   box-shadow: 0 1px 4px #838383;
-
   z-index: 2;
 }
+
 .map_btn:hover {
   background: #f8fafc;
   box-shadow: 0 2px 6px #838383;
@@ -107,23 +92,18 @@ body { margin: 0; padding: 0; }
   transform: translateY(0);
   box-shadow: 0 1px 2px #838383;
 }
+
 #legend_panel{
   position:absolute;
   left:10px;
   top:280px;
-
   background:#ffffff;
   padding:10px;
-
   border-radius:8px;
-
   font-family:sans-serif;
   font-size:13px;
-
   box-shadow:0 1px 4px #838383;
-
   max-width:260px;
-
   z-index:2;
 }
 
@@ -158,6 +138,7 @@ body { margin: 0; padding: 0; }
   background: #b6653f; 
 }
 </style>
+
 </head>
 
 <body>
@@ -285,7 +266,7 @@ map.on('load', () => {
   });
 
 
-
+ // switcher
   const raster_basemaps = ['basemap_dark', 'basemap_stairways', 'basemap_composite', 'basemap_flood'];
 
   function setBasemap(selected) {
@@ -309,7 +290,7 @@ map.on('load', () => {
   setBasemap('mapbox_light');
 
 
-  // Zoom buttons
+  // zoom buttons
   const btnZoomIn = document.getElementById('btnZoomIn');
   const btnZoomOut = document.getElementById('btnZoomOut');
   if (btnZoomIn) btnZoomIn.addEventListener('click', () => map.zoomIn());
